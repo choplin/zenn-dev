@@ -1,5 +1,5 @@
 ---
-title: "Zig言語とpgzxによるPostgreSQL拡張の紹介"
+title: "Zig言語とpgzxによるPostgreSQL拡張開発の紹介"
 emoji: "🐘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["PostgreSQL", "Zig"]
