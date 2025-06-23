@@ -72,4 +72,4 @@ AIエージェント自体も活用方法も進化の途上にあり、ベスト
 
 このシリーズでは、Claude Codeの実践的な使用経験から見えてきた、AIエージェントとの協働における考え方の転換を探っていきます。
 
-次回は、Claude Codeを使い込んで見えてきた3つの現実と、それに対する心構えについて共有します。
+**次の記事**: [Claude Codeとどう向き合うか - 1. 3つの現実と心構え](https://zenn.dev/choplin/articles/2025-01-23-claude-code-1-reality-and-mindset)
