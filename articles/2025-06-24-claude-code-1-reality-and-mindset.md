@@ -6,7 +6,7 @@ topics: ["ai", "claudecode", "開発効率", "エンジニアリング"]
 published: true
 ---
 
-**前の記事**: [Claude Codeとどう向き合うか - 0. なぜ今、AIとの向き合い方を考えるのか](https://zenn.dev/choplin/articles/2025-01-23-claude-code-0-why-now)
+**前の記事**: [Claude Codeとどう向き合うか - 0. なぜ今、AIとの向き合い方を考えるのか](https://zenn.dev/choplin/articles/2025-06-24-claude-code-0-why-now)
 
 前回の記事では、AIエージェントとの協働において求められるマインドセットの転換について触れました。「手を動かそう」と締めくくりましたが、実際にClaude Codeを使い込んでいくと、理想と現実のギャップに直面することになります。
 
