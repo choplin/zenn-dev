@@ -6,6 +6,10 @@ topics: ["ai", "claudecode", "エンジニアリング", "キャリア"]
 published: true
 ---
 
+> **シリーズ記事**: Claude Codeとどう向き合うか
+> 
+> → 次の記事: [3つの現実と心構え](./2025-06-24-claude-code-1-reality-and-mindset)
+
 ## このシリーズについて
 
 「Claude Codeとどう向き合うか」は、約1ヶ月のClaude Codeの使い込みから得た洞察を共有するシリーズです。
