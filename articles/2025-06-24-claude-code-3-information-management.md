@@ -3,7 +3,7 @@ title: "Claude Codeとどう向き合うか - 3. 個人がAIとチームを組�
 emoji: "📝"
 type: "tech"
 topics: ["ai", "claudecode", "レビュー", "ドキュメント"]
-published: false
+published: true
 ---
 
 > **シリーズ記事**: Claude Codeとどう向き合うか
