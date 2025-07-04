@@ -1,16 +1,16 @@
 ---
-title: "cclog - Claude Codeセッションビューア + 即時レジューム"
+title: "cclogで快適なClaude Codeセッションログ閲覧と即時レジューム"
 emoji: "📜"
 type: "tech"
 topics: ["claudecode", "cli", "fzf", "shell", "productivity"]
-published: false
+published: true
 ---
 
-過去のClaude Codeセッションを瞬時に見つけて再開できるツール「[cclog](https://github.com/choplin/cclog)」を作りました。
+過去のClaude Codeセッションを瞬時に見つけて再開できるコマンド「[cclog](https://github.com/choplin/cclog)」を作りました。
 
 ## cclogとは
 
-cclogは、Claude Codeのセッションログをfzfでインタラクティブに閲覧し、`claude --resume` によるセッション再開まで快適に行うシェルスクリプトツールです。
+cclogは、Claude Codeのセッションログをfzfでインタラクティブに閲覧し、`claude --resume` によるセッション再開まで快適に行うコマンドです。
 
 Claude Codeはセッションログを`~/.claude/projects/`配下にプロジェクトごとに保存しています。cclogはこのログファイルを解析して、使いやすい形で表示します。
 
@@ -18,19 +18,21 @@ Claude Codeはセッションログを`~/.claude/projects/`配下にプロジェ
 
 ## 主な機能
 
-### 1. セッション一覧表示
+### 1. セッション一覧とプレビュー
 
 ```bash
 $ cclog
 ```
 
-現在のディレクトリのClaude Codeセッションを一覧表示。セッションID、開始時刻、最初のメッセージが確認できます。
+現在のディレクトリのClaude Codeセッションを一覧をリストにしてfzfで表示。セッションID、開始時刻、最初のメッセージが確認できます。
+
+fzfのプレビューウィンドウでセッション内容をリアルタイム表示し、選択したセッションの詳細を確認できます。セッション情報（ファイル名、メッセージ数、開始時刻、実行時間）も表示されます。
 
 ![セッション一覧画面](/images/2025-07-03-cclog-introduction/cclog-session-list.png)
 
-### 2. ログ詳細表示
+### 2. ログ全体表示
 
-fzfのプレビューウィンドウでセッション内容をリアルタイム表示。メッセージは色分けされ、セッション情報（ファイル名、メッセージ数、開始時刻、実行時間）も表示されます。
+`Ctrl-V`を押すと、プレビューウィンドウで表示されていたセッション内容の全体を`$PAGER`で表示します。メッセージは以下のように色分けされています。
 
 - **User**: シアン
 - **Assistant**: 白
@@ -40,7 +42,7 @@ fzfのプレビューウィンドウでセッション内容をリアルタイ�
 
 ### 3. セッション即時レジューム
 
-`Ctrl-R`を押すだけで、選択したセッションを`claude -r`で即座に再開。中断した作業の継続がスムーズに行えます。
+`Ctrl-R`を押すと、選択したセッションを`claude -r`で即座に再開。中断した作業の継続がスムーズに行えます。
 
 ![セッションレジューム実行画面](/images/2025-07-03-cclog-introduction/cclog-resume.png)
 
